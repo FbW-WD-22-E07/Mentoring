@@ -21,12 +21,15 @@ body hr {
 body header {
   background-color: #677EEA;
 }
+body aside {
+  border-right: 1px solid gainsboro;
+}
 body main div.signup-pic-container {
   display: none;
 }
 body main div.form-container {
   padding: 5rem 1rem;
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -38,7 +41,7 @@ body main div.form-container button.signup-btn {
   min-width: 20rem;
   max-width: 25rem;
   height: 2.5rem;
-  color: whitesmoke;
+  color: white;
   background-color: #70a2cb;
   border: none;
   border-radius: 3px;
@@ -55,7 +58,8 @@ body main div.form-container form[name=signup] {
   min-width: 20rem;
   max-width: 30rem;
   padding: 2rem;
-  border: 1px solid #ff8e7a;
+  border: 1px solid gainsboro;
+  background-color: white;
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -83,7 +87,7 @@ body main div.form-container form[name=signup] button {
   height: 3.5rem;
   width: 100%;
   margin: 0.3rem auto;
-  color: whitesmoke;
+  color: white;
   border: none;
   border-radius: 3px;
   font-size: 1rem;

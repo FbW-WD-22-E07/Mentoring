@@ -3,7 +3,8 @@ $primary: #677EEA;
 $secondary: rgb(74, 138, 190);
 $danger: lighten(tomato, 10);
 $success: rgb(101, 151, 101);
-$white: whitesmoke;
+$somke: whitesmoke;
+$white: white;
 $lightgray: gainsboro;
 
 //reset default margin and padding
@@ -35,7 +36,9 @@ body{
         background-color: $primary;
     }
 
-
+    aside{
+        border-right: 1px solid $lightgray;
+    }
     main{
         
         div.signup-pic-container{
@@ -76,7 +79,8 @@ body{
                 min-width: 20rem;
                 max-width: 30rem;
                 padding: 2rem;
-                border: 1px solid $danger;
+                border: 1px solid $lightgray;
+                background-color: white;
                 border-radius: 5px;
                 box-sizing: border-box;
 
