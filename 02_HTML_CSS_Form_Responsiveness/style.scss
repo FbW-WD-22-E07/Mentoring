@@ -1,0 +1,210 @@
+
+$primary: #677EEA;
+$secondary: rgb(74, 138, 190);
+$danger: lighten(tomato, 10);
+$success: rgb(101, 151, 101);
+$white: whitesmoke;
+$lightgray: gainsboro;
+
+//reset default margin and padding
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//mobile
+body{
+    display: grid;
+    grid-template: 7% 10% auto 7% / 1fr;
+    height: 100vh;
+    text-align: center;
+    font-family: sans-serif;
+    color: darken($lightgray, 30);
+
+    hr{
+        border: 1px solid $lightgray;
+        width: 60%;
+        margin: 1rem auto;
+        margin-bottom: 3rem;
+
+    }
+
+
+    header{
+        background-color: $primary;
+    }
+
+
+    main{
+        
+        div.signup-pic-container{
+            display:none;
+        }
+
+        div.form-container{
+            padding: 5rem 1rem;
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+
+            h3{
+                margin-bottom: 2rem;
+                font-weight: bold;
+            }
+
+            button.signup-btn{
+                min-width: 20rem;
+                max-width: 25rem;
+                height: 2.5rem;
+                color: $white;
+                background-color: lighten($secondary, 10);
+                border: none;
+                border-radius: 3px;
+                margin: 0.5rem auto;
+                font-size: 1rem;
+
+                &:hover{
+                    background-color: $secondary;
+                }
+            }
+
+            form[name='signup']{
+                display:flex;
+                flex-direction: column;
+                margin: 5rem auto;
+                min-width: 20rem;
+                max-width: 30rem;
+                padding: 2rem;
+                border: 1px solid $danger;
+                border-radius: 5px;
+                box-sizing: border-box;
+
+                h5{
+                    margin: 0.3rem auto;
+                }
+
+                input[type='email'], input[type='password']{
+                    height: 4rem;
+                    border: 1px solid $lightgray;
+                    border-radius: 5px;
+                    margin-bottom: 0.5rem;
+                    padding: 1rem 0.8rem;
+                    font-size: larger;
+
+                    &::placeholder{
+                        font-size: 1rem;
+                    }
+                }
+
+                button{
+                    height: 3.5rem;
+                    width: 100%;
+                    margin: 0.3rem auto;
+                    color: $white;
+                    border: none;
+                    border-radius: 3px;
+                    font-size: 1rem;
+                }
+
+
+                button[type="submit"]{
+                    margin-top: 1rem;
+                    background-color: lighten($success,10);
+
+                    &:hover{
+                        background-color: darken($success,10);
+                    }
+                    
+                }
+                
+                button[type='reset']{
+                    background-color: lighten($danger, 10);
+
+                    &:hover{
+                        background-color: darken($danger, 10);
+                    }
+
+                }
+
+                p{
+                    font-size: 0.8rem;
+                    margin-top: 0.5rem;
+                    line-height: 1.2rem;
+                    span{
+                        border-bottom: 1px dotted;
+                    }
+                }
+
+            }
+        }
+    }
+
+    footer{
+        background-color: $primary;
+    }
+}
+
+
+//tablets
+@media only screen and (min-width: 600px){
+    body{
+        
+        grid-template: 7% auto 5% / 30% auto;
+        
+        header{
+            grid-column-start: 1;
+            grid-column-end: 3
+        }
+        
+        footer{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}
+
+
+//labtops and desktops
+@media only screen and (min-width: 1200px){
+    body{
+        grid-template: 7% 5% auto 5% / 1fr;
+
+
+        aside{
+            border-right: 1px solid $lightgray;
+            display: block;
+            grid-column:1/3 ;
+        }
+
+        main{
+             display: flex;
+             margin: 2rem 5rem;
+             border: 1px solid $lightgray;
+             border-radius: 12px;
+
+            //  box next to signup form
+            div.signup-pic-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 70%;
+                height: 100%;
+                background-color: lighten($primary, 30);
+                border-radius: 0px 10px 10px 0;
+                // border: 1px solid;
+                
+                img{
+                    max-width: 80%;
+                }
+            }
+
+            div.form-container{
+                min-width: 30vw;
+                max-width: 35vw;
+                // border: 1px solid;
+                border-radius: 10px 0 0 10px !important;
+            }
+        }
+    }
+}

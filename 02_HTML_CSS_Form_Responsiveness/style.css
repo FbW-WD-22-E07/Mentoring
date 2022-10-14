@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template: 7% 10% auto 7%/1fr;
+  height: 100vh;
+  text-align: center;
+  font-family: sans-serif;
+  color: #909090;
+}
+body hr {
+  border: 1px solid gainsboro;
+  width: 60%;
+  margin: 1rem auto;
+  margin-bottom: 3rem;
+}
+body header {
+  background-color: #677EEA;
+}
+body main div.signup-pic-container {
+  display: none;
+}
+body main div.form-container {
+  padding: 5rem 1rem;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+body main div.form-container h3 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+body main div.form-container button.signup-btn {
+  min-width: 20rem;
+  max-width: 25rem;
+  height: 2.5rem;
+  color: whitesmoke;
+  background-color: #70a2cb;
+  border: none;
+  border-radius: 3px;
+  margin: 0.5rem auto;
+  font-size: 1rem;
+}
+body main div.form-container button.signup-btn:hover {
+  background-color: rgb(74, 138, 190);
+}
+body main div.form-container form[name=signup] {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+  min-width: 20rem;
+  max-width: 30rem;
+  padding: 2rem;
+  border: 1px solid #ff8e7a;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+body main div.form-container form[name=signup] h5 {
+  margin: 0.3rem auto;
+}
+body main div.form-container form[name=signup] input[type=email], body main div.form-container form[name=signup] input[type=password] {
+  height: 4rem;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  padding: 1rem 0.8rem;
+  font-size: larger;
+}
+body main div.form-container form[name=signup] input[type=email]::-moz-placeholder, body main div.form-container form[name=signup] input[type=password]::-moz-placeholder {
+  font-size: 1rem;
+}
+body main div.form-container form[name=signup] input[type=email]:-ms-input-placeholder, body main div.form-container form[name=signup] input[type=password]:-ms-input-placeholder {
+  font-size: 1rem;
+}
+body main div.form-container form[name=signup] input[type=email]::placeholder, body main div.form-container form[name=signup] input[type=password]::placeholder {
+  font-size: 1rem;
+}
+body main div.form-container form[name=signup] button {
+  height: 3.5rem;
+  width: 100%;
+  margin: 0.3rem auto;
+  color: whitesmoke;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+body main div.form-container form[name=signup] button[type=submit] {
+  margin-top: 1rem;
+  background-color: #83ac83;
+}
+body main div.form-container form[name=signup] button[type=submit]:hover {
+  background-color: #517851;
+}
+body main div.form-container form[name=signup] button[type=reset] {
+  background-color: #ffb9ad;
+}
+body main div.form-container form[name=signup] button[type=reset]:hover {
+  background-color: tomato;
+}
+body main div.form-container form[name=signup] p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  line-height: 1.2rem;
+}
+body main div.form-container form[name=signup] p span {
+  border-bottom: 1px dotted;
+}
+body footer {
+  background-color: #677EEA;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    grid-template: 7% auto 5%/30% auto;
+  }
+  body header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  body footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    grid-template: 7% 5% auto 5%/1fr;
+  }
+  body aside {
+    border-right: 1px solid gainsboro;
+    display: block;
+    grid-column: 1/3;
+  }
+  body main {
+    display: flex;
+    margin: 2rem 5rem;
+    border: 1px solid gainsboro;
+    border-radius: 12px;
+  }
+  body main div.signup-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    background-color: #edf0fd;
+    border-radius: 0px 10px 10px 0;
+  }
+  body main div.signup-pic-container img {
+    max-width: 80%;
+  }
+  body main div.form-container {
+    min-width: 30vw;
+    max-width: 35vw;
+    border-radius: 10px 0 0 10px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
