@@ -185,7 +185,7 @@ result = auth('ernesto', 'ern123')
 console.log(result);
 
 
-
+/* ------------------------------- / ------------------------------ */
 // function test () {
     
 //     console.log('first');
@@ -196,11 +196,8 @@ console.log(result);
 // test()
 
 
-
-let acc = 0;
-acc = acc + 2;
-acc = acc + 5;
-acc = acc + 0
+/* ------------------------------- . ------------------------------ */
+// Write a function to calculate the total number of birds from the BirdsArray that contains number of birds visited my garden in 2 weeks.
 
 function totalBirdCount(birdsArray) {
     let sum = 0;

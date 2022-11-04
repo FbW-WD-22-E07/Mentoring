@@ -34,7 +34,7 @@ result = '' / 2;                    //0
 
 
 /* ------------------------- Falsy Valuse ------------------------- */
-//Falsy Values:     false 0 -0 undefined NaN '' null
+//Falsy Values:     false, 0, -0, undefined, NaN, '', null
 //Truthy Values:    Anything other than falsy values is truthy
 
 //first example
@@ -92,15 +92,11 @@ if (!isNaN(w)) {        // !true == false
  * if the password is match with the given password
  */
 
-let username = 'atdhetar';
-let givenUsername = 'atdhetar';
+// let username = 'atdhetar';
+// let givenUsername = 'atdhetar';
 
-let password = '123';
-let givenPassword = 'password';
-
-
-
-//alternative (better practice)
+// let password = '123';
+// let givenPassword = 'password';
 // if (username === givenUsername && password === givenPassword) {
 //     //truthy block
 //     console.log('You are logged in');
@@ -127,11 +123,11 @@ console.log("result of expression:", result);
 
 
 // comparing objects
-console.log([1, 2, 3] === [1, 2, 3])
+console.log([1, 2, 3] === [1, 2, 3])    //false
 
-console.log([] === []);
-console.log({ name: 'fahim' } === { name: 'fahim' });
+console.log([] === []); //false
+console.log({ name: 'fahim' } === { name: 'fahim' }); //false
 
-console.log(!!!true)
+console.log(!!!true) //false => true = > false
 
-console.log(!([] === []))
+console.log(!([] === [])) // !false => true
