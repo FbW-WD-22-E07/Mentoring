@@ -190,7 +190,7 @@ console.log(result);
     
 //     console.log('first');
 //     return
-//     console.log('second')
+//     console.log('second')    //this line never executes, because it's located after return
 // }
 
 // test()
