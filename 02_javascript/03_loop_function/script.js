@@ -197,7 +197,7 @@ console.log(result);
 
 
 /* ------------------------------- . ------------------------------ */
-// Write a function to calculate the total number of birds from the BirdsArray that contains number of birds visited my garden in 2 weeks.
+// 1.Write a function to calculate the total number of birds from the BirdsArray that contains number of birds visited my garden in 2 weeks.
 
 function totalBirdCount(birdsArray) {
     let sum = 0;
@@ -210,4 +210,76 @@ function totalBirdCount(birdsArray) {
 }
 
 const birdsPerDay = [2, 5, 0, 7, 4, 1, 3, 0, 2, 5, 0, 1, 3, 1];
+const birds = [5, 2, 3, 1, 6, 4]
 console.log(totalBirdCount(birdsPerDay))
+console.log(totalBirdCount(birds))
+
+/* ------------------------------- . ------------------------------ */
+//2. Calculate the number of visiting birds in a specific week
+// birdsPerDay = [2, 5, 0, 7, 4, 1, 3, 0, 2, 5, 0, 1, 3, 1];
+
+
+function birdsInWeek(array, week) {
+    //calculate the range for the given week
+        //1     start = 0 *7        end= start+7
+        //2     start = 1*7         end = start+7
+        //3     start = 2*7         end = start+7
+    
+    
+    //body
+    // 1. find all elements in requested week
+    let start = (week - 1) * 7;
+    let end = start + 7;
+    
+    // 2. calculate the sum of them
+    return totalBirdCount(array.slice(start, end))
+
+}
+
+console.log(birdsInWeek(birdsPerDay, 2));// => 12
+
+
+
+/* ------------------------------- . ------------------------------ */
+// write a function to calculate the area of a circle
+// calcCircleArea(rad)
+// area = pi * (R^2)
+
+function power(b, p) {
+    return b ** p;
+}
+
+function calcCircleArea(r) {
+    let rpower2 = power(r, 2);
+    return 3.14 * rpower2;
+}
+
+/* ------------------------------- . ------------------------------ */
+
+//3. Fix a counting mistake
+let birdsCount = [2, 5, 0, 7, 4, 1];
+
+//define function
+function fixBirdCountLog(param) {
+    //1. grab the elements of the array
+    //2. if the element has a even index, increment it
+
+    for (let i = 0; i < param.length; i+=2) {
+        
+        param[i] += 1;
+        
+        
+        //alternative solution (if i increment by 1)
+        // if (i % 2 === 0) {
+        //     param[i] += 1;
+        // }
+
+
+    }
+
+    return param;
+}
+
+
+console.log(fixBirdCountLog(birdsCount));
+// => [3, 5, 1, 7, 5, 1]
