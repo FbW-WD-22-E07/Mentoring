@@ -1,0 +1,39 @@
+.card {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-info {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-email,
+  .card-address,
+  .card-phone {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .card-title,
+  .card-email,
+  .card-address,
+  .card-phone {
+    color: gray;
+  }
