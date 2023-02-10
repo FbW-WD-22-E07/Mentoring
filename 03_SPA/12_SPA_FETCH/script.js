@@ -71,7 +71,7 @@ function getData (number) {
 }
 
 
-let btn = document.querySelector("input[type='submit']");
+let btn = document.querySelector("input[type='button']");
 let textField = document.querySelector("input[type='text']");
 
-btn.addEventListener('click', ()=>{getData(textField.value)});
+btn.addEventListener('click', ()=>{getData(document.querySelector("input[type='text']").value)});

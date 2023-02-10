@@ -1,0 +1,30 @@
+
+
+#outer{
+    width: 10em;
+    height: 10em;
+    background-color: #333;
+    margin:auto;
+}
+
+#inner{
+    width: 7em;
+    height: 7em;
+    background-color: aqua;
+}
+
+#outer, #inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup{
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+}
+
+input{
+    margin-bottom: 1em;
+}
